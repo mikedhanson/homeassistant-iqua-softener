@@ -1,10 +1,10 @@
 import logging
 from typing import Any, Dict, Optional
 
-from homeassistant import config_entries, core
-import voluptuous as vol
+from homeassistant import config_entries, core # type: ignore
+import voluptuous as vol # type: ignore
 
-from .const import DOMAIN, CONF_USERNAME, CONF_PASSWORD, CONF_DEVICE_SERIAL_NUMBER
+from .const import DOMAIN, CONF_USERNAME, CONF_PASSWORD, CONF_DEVICE_SERIAL_NUMBER, CONF_REFRESH_INTERVAL_MINUTES
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -13,6 +13,7 @@ DATA_SCHEMA_USER = vol.Schema(
         vol.Required(CONF_USERNAME): str,
         vol.Required(CONF_PASSWORD): str,
         vol.Required(CONF_DEVICE_SERIAL_NUMBER): str,
+        vol.Required(CONF_REFRESH_INTERVAL_MINUTES): int,
     }
 )
 

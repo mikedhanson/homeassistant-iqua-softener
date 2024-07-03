@@ -1,3 +1,12 @@
+# Dev environemnt for testing 
+
+Getting started:
+
+https://developers.home-assistant.io/docs/development_environment/#:~:text=Git-,Getting%20started%3A,-Go%20to%20Home
+
+Debugging with Visual Studio Code
+If the Dev Container was set up correctly  it -supports debugging by default, out-of-the-box. It provides the necessary debug configurations, so hitting F5 should launch Home Assistant. Any breakpoints put in the code should be triggered, and the debugger should stop.
+
 # iQua app supported water softeners integration for Home Assistant
 
 `iqua_softener` is a _custom component_ for [Home Assistant](https://www.home-assistant.io/). The integration allows you to pull data for you iQua app supported water softener from Ecowater company server.
